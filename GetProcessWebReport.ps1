@@ -1,0 +1,1 @@
+﻿Get-Process | Where {$_.ProcessName -imatch "chrome"} | Select-Object Name, CPU | Sort-Object CPU -Descending  | ConvertTo-Html -Head "<style> th {background-color: red;} td {border: 1px black solid; padding: 3px;} </style>" -Title "Processnames" | Out-File -FilePath C:\users\fern\desktop\test.html
