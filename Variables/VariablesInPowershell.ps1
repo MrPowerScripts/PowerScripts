@@ -9,7 +9,7 @@ $ThisIsAlsoAVariable
 #You can also set variables like this
 Set-Variable -Name Variablename -Value VariableValue
 
-#Or like this - you don't need to delate types in powershell
+#Or like this - you don't need to declare types in powershell
 $Variable = 3
 $ThisIsAVariableToo = "it's true"
 $ThisIsAlsoAVariable = $True
