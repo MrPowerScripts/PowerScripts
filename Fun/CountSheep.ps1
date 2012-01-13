@@ -1,8 +1,9 @@
-﻿$Sheep = 1..100 | ForEach {
+﻿$Sheep = 1..100 
 
-                           
-                         Write-Host "$Sheep[$_] Sheep"
+$Sheep | ForEach {
 
-                         sleep 2
+                         
+                         Write-Host "$Sheep Sheep"
+
 
                          }
