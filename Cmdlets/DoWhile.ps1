@@ -1,0 +1,1 @@
+﻿do {$i++; write-host $i; } while ((Test-Path "$Folder") -eq $True)
