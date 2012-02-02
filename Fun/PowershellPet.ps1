@@ -1,8 +1,12 @@
 ﻿#Powershell Pet
-Function PetPose {
 
-#This function returns a random number between 1 and 6
-$Pose = Get-Random -Minimum 1 -Maximum 6
+$Mover = "       "
+
+for (;;) {
+
+
+#This function returns a random number between 0 and 6
+$Pose = Get-Random 6
 
 #Supplying the randomly generated number to the switch command tells
 #Switch which pose to display
@@ -10,51 +14,79 @@ $Pose = Get-Random -Minimum 1 -Maximum 6
 #CLS clears the screen before a new pose is displayed
 cls
 
-switch ($Pose){
+switch ($Pose) {
 
 
+    0 { 
+        write-host ""
+        write-host "$Mover(>'')>"
+        write-host ""
+        break}
+        
     1 { 
         write-host ""
-        write-host "(>''>)"
-        write-host ""}
-
-    2 { 
+        write-host "$Mover<(''<)"
         write-host ""
-        write-host "(<''<)"
-        write-host ""}
+        break}
+            
+    2 { 
+
+        write-host ""
+        write-host "$Mover(V''V)"
+        write-host ""
+        break}
             
     3 { 
-
         write-host ""
-        write-host "(V''V)"
-        write-host ""}
-            
-     4 { 
+        write-host "$Mover(^''^)"
         write-host ""
-        write-host "(^''^)"
-        write-host ""}
+        break}
     
+    4 { 
+        write-host ""
+        write-host "$Mover<(  Y )"
+        write-host ""
+        break}
+
     5 { 
         write-host ""
-        write-host "<(  Y )"
-        write-host ""}
-
-    6 { 
+        write-host "$Mover( Y  )>"
         write-host ""
-        write-host "( Y  )>"
-        write-host ""}
-
-      }
-
-    #Sleep command pauses the text for one second
-
-    sleep 1
+        break}
 }
 
-#For loop with syntax to perform the loop infinitely 
-for (;;) {
+$CurMove = $Mover.Length
 
-#Executes the pet pose function
-PetPose
+$Mover = ""
+
+$MoveType = Get-Random 3
+
+
+if ($MoveType -eq 1) {
+
+    for ($i=0; $i -lt ($CurMove + 1); $i++) {
+
+    $Mover = $Mover + " "
+    Write-Host "$i added"
+    }
+
+}
+
+if ($MoveType -eq 2) {
+
+    for ($i=0; $i -lt ($CurMove - 1); $i++) {
+
+    $Mover = $Mover + " "
+    Write-Host "$i subtracted"
+    }
+
+}
+
+Write-Host " "
+Write-Host $MoveType
+Write-Host $CurMove
+Write-Host $NewMove
+
+sleep 1
 
 }
