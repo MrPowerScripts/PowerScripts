@@ -1,5 +1,5 @@
 ﻿#ForEach Pipelining
-Get-Service | ForEach {
+Get-Service | ForEach-object {
 
                       if ($_.status -imatch "running") {Write-Host $_ -ForegroundColor Green}
                       if ($_.status -imatch "stopped") {Write-Host $_ -ForegroundColor Red}
@@ -9,7 +9,7 @@ Get-Service | ForEach {
 #ForEach without pipelining
 $Services = Get-Service
 
-ForEach ($Potato in $Services) {
+ForEach-object ($Potato in $Services) {
 
         if ($Potato.status -imatch "running") {Write-Host $Potato -ForegroundColor Green}
         if ($Potato.status -imatch "stopped") {Write-Host $Potato -ForegroundColor Red}
@@ -21,7 +21,7 @@ ForEach ($Potato in $Services) {
 $Stuff = Get-ChildItem $Folder -Recurse
 
 
-Foreach ($Item in $Stuff) {
+Foreach-object ($Item in $Stuff) {
                             
                             $Parent = $Item.DirectoryName
 
