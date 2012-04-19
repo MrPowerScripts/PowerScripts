@@ -1,17 +1,7 @@
-﻿
+﻿#Create a JSON object model from Get-Process
+Get-Process | ConvertTo-Json | Out-File C:\SomeFolder\SomeFile.txt
 
-
-
-Get-Process | ConvertTo-Json | Out-File C:\Users\Fern\Desktop\json.txt
-
-
-
-
-
-
-
-
-
+#Download JSON model of the Reddit front page, and load it as a powershell object
 $WebClient = New-Object net.webclient
 
 $Json = $WebClient.Downloadstring("http://www.reddit.com/.json") | ConvertFrom-Json
