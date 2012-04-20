@@ -7,8 +7,12 @@ You can easily browse reddit from within a powershell console
 
 -----------------INSTALLATION------------------------
 
-1. Copy the folder "RedditNinja" to a module folder...
-C:\Users\USERNAME\Documents\WindowsPowerShell\Modules is one location
+1. Create a folder called "RedditNinja" in your module folder and
+ place RedditNinja.psm1 inside of it
+
+C:\Users\USERNAME\Documents\WindowsPowerShell\Modules is one location you can
+place the RedditNinja folder
+
 If it doesn't exist you can create it.
 
 2. Inside powershell type "Get-Module -ListAvailable" and you should now
