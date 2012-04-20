@@ -5,7 +5,7 @@ Become a Reddit ninja with this CMDLET
 You can easily browse reddit from within a powershell console
 
 
-INSTALLATION:
+-----------------INSTALLATION------------------------
 
 1. Copy the folder "RedditNinja" to a module folder...
 C:\Users\USERNAME\Documents\WindowsPowerShell\Modules is one location
@@ -20,7 +20,8 @@ see Reddit Ninja as one of the options.
 
 5. Enjoying being a Reddit Ninja
 
-USAGE:
+-----------------USAGE-----------------------
+
 #Get-Reddits 
 
 -will check if it has reddits stored, and if not will download
@@ -28,7 +29,7 @@ the lastest 25 from reddit.com, and display them
 
 #Get-Reddits -new
 
--forces get-reddits to download the lastest set of 25 from reddit.com
+-forces Get-Reddits to download the lastest set of 25 from reddit.com
 
 #Get-Reddits -Index (integer set)
 
