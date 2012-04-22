@@ -14,7 +14,7 @@ Version 1.0
 
 -----------------INSTALLATION------------------------
 
-If you have installed a previous version then use Remove-Mode
+If you have installed a previous version then use Remove-Module
 to remove the old version first
 
 1. Create a folder called "RedditNinja" in your module folder and
