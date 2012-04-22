@@ -1,11 +1,21 @@
 ﻿<#
 Created by Mr.PowerScripts
+
 More Powershell examples at www.youtube.com/MrPowerScripts
+
 Become a Reddit ninja with this CMDLET
 You can easily browse reddit from within a powershell console
 
 
+Version 1.1
+Added -Sub parameter to seach through subreddits
+
+Version 1.0
+
 -----------------INSTALLATION------------------------
+
+If you have installed a previous version then use Remove-Mode
+to remove the old version first
 
 1. Create a folder called "RedditNinja" in your module folder and
  place RedditNinja.psm1 inside of it
