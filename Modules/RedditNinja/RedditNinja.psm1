@@ -72,11 +72,39 @@ function Get-Reddits {
     
     [Parameter(Mandatory=$False,HelpMessage="Use this flag alone to download new reddits")]
     [Switch]
-    $New
+    $New,
+
+    [Parameter(Mandatory=$False,HelpMesssage="Enter the name of a known subreddit to download the reddits")]
+    [ValidateLength(30)]
+    [string]
+    $Sub
     )
+
+
+
+    if ($Sub.length-gt0-eq$true) {
+
+        Write-Host "Downloading new sub threads"
+        $WC = New-Object net.webclient
+        $global:SubRedditStorage = $WC.Downloadstring("http://www.reddit.com/r/$Sub/.json") | ConvertFrom-json
+        Write-Host "Threads Updated"
+
+    }
 
     #Redownload the reddit jason which may have new items
     if ($New-eq$true-or$RedditStorage-eq$Null) {
+        
+        if ($Sub.length-gt0-eq$true) {
+
+            Write-Host "Downloading new threads"
+            $WC = New-Object net.webclient
+            $global:RedditStorage = $WC.Downloadstring("http://www.reddit.com/.json") | ConvertFrom-json
+            Write-Host "Threads Updated"
+        
+            break function
+        }
+        
+        
         Write-Host "Downloading new threads"
         $WC = New-Object net.webclient
         $global:RedditStorage = $WC.Downloadstring("http://www.reddit.com/.json") | ConvertFrom-json
