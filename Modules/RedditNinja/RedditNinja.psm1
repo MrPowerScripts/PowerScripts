@@ -38,8 +38,8 @@ see Reddit Ninja as one of the options.
 
 #Get-Reddits 
 
--will check if it has reddits stored, and if not will download
-the lastest 25 from reddit.com, and display them
+     -will check if it has reddits stored, and if not will download
+     the lastest 25 from reddit.com, and display them
 
 #Get-Reddits -new
 
