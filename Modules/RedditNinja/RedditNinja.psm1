@@ -94,10 +94,8 @@ function Get-Reddits {
 
     if ($Sub.length -eq 0) {
 
-        Write-Host "INSIDE MAIN" -BackgroundColor Green
         if ($New -eq $True -or $MainStorage -eq $Null) {
             
-            Write-Host "INSIDE MAIN NEW" -BackgroundColor Green
             Write-Host "Downloading new main threads"
             
             try {
