@@ -20,6 +20,9 @@ to remove the old version first
 1. Create a folder called "RedditNinja" in your module folder and
  place RedditNinja.psm1 inside of it
 
+Type "$env:PSModulePath" in powershell to see different
+module paths on your local system
+
 C:\Users\USERNAME\Documents\WindowsPowerShell\Modules is one location you can
 place the RedditNinja folder
 
