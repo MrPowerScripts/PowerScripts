@@ -6,6 +6,8 @@ More Powershell examples at www.youtube.com/MrPowerScripts
 Become a Reddit ninja with this CMDLET
 You can easily browse reddit from within a powershell console
 
+1.2
+Fixed a bug that caused an error when trying to lauch main reddits from a browser
 
 Version 1.1
 Added -Sub parameter to seach through subreddits
@@ -122,7 +124,7 @@ function Get-Reddits {
             $Browse | ForEach-Object {
                 $ix = $_-1
 
-                $RedditURI= "http://www.reddit.com"+$RedditStorage.data.children.Item(($ix)).data.permalink
+                $RedditURI= "http://www.reddit.com"+$MainStorage.data.children.Item(($ix)).data.permalink
                 Invoke-Expression "start $RedditURI"
 
             }
