@@ -1,5 +1,5 @@
-﻿$Loc="C:\users\fern\desktop\testfile.txt"
-$TO="C:\users\fern\Desktop\testoutput.txt"
+﻿$Loc="C:somefolderd\testfile.txt"
+$TO="C:\somefolder\testoutput.txt"
 
 cls
 
