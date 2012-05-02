@@ -1,4 +1,4 @@
-﻿$Loc="C:somefolder\testfile.txt"
+﻿$Loc="C:\somefolder\testfile.txt"
 $TO="C:\somefolder\testoutput.txt"
 
 cls
