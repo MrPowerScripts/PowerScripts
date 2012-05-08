@@ -10,6 +10,35 @@ More Powershell examples at
 www.youtube.com/MrPowerScripts
 www.github.com/MrPowerScripts
 
+
+-----------------INSTALLATION------------------------
+
+If you have installed a previous version then use Remove-Module
+to remove the old version first
+
+1. Create a folder called "TwitterNinja" in your module folder and
+ place TwitterNinja.psm1 inside of it
+
+Type "$env:PSModulePath" in powershell to see different
+module paths on your local system
+
+C:\Users\USERNAME\Documents\WindowsPowerShell\Modules is one location you can
+place the TwitterNinja folder
+
+If it doesn't exist you can create it.
+
+2. Inside powershell type "Get-Module -ListAvailable" and you should now
+see Twitter Ninja as one of the options.
+
+3. Type "Import-Module "TwitterNinja"
+
+4. Type "Get-Reddits" to see if the module was installed correctly
+
+5. Enjoying being a Twitter Ninja
+
+
+------------ Usage ---------------------------------
+
 .DESCRIPTION
 This cmdlet will allow you to search twitter using any general search term - Such as Sports, WorldNews, TVShows - and displays the latest 15 tweets with that term.
 If you find tweets from a user and would like to see more tweets from them, you can provide their user name to see as many as their last 200 tweets.
