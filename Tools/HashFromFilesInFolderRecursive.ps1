@@ -6,6 +6,7 @@ $ExportFile = "C:\users\Fern\Desktop\supertest.txt"
 $Type="md5"
 
 #Looping through the files, generating hash, and appending to export file
+#the -file is exclusive to powershell 3
 $Files = Get-ChildItem $Parentfolder -Recurse -File
 
 #Create Empty Array To Store Hashes
