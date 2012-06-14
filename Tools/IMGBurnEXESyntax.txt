@@ -1,0 +1,1 @@
+"C:\Program Files\ImgBurn\ImgBurn.exe" /start /bootemutype 0 /bootloadsegment 07C0 /bootsectorstoload 8 /bootimage <PATH TO ETFSBOOT>\etfsboot.com /Mode build /rootfolder yes /outputmode imagefile /src <PATH TO SOURCE FOLDER> /volumelabel <VOLUME LABEL> /dest "<PATH TO ISO DESTINATION>".iso /FILESYSTEM "UDF" /NOIMAGEDETAILS /CLOSESUCCESS
