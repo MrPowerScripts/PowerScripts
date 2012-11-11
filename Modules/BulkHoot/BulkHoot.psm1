@@ -34,7 +34,7 @@ Will create a new BulkUpload to the path provided with 50 lines of "","","". If 
 
 .EXAMPLE
 New-BulkHoot -TweetInterval 10
-Default Time Increment between tweets is 30 minutes. You can change the increment value between 10 and 95 minutes apart. Value must end in 0 or 5. Remember you are limited to only 50 lines per upload!
+Default Time Increment between tweets is 30 minutes. You can change the increment value between 10 or more minutes apart. Value must end in 0 or 5. Remember you are limited to only 50 lines per upload!
 
 .EXAMPLE
 New-BulkHoot -Limit 40
