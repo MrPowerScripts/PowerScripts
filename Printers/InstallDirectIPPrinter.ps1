@@ -1,3 +1,7 @@
+﻿#This script shows different methods to installing a printer via Direct IP
+﻿#And can be used to follow along while watching the associated video http://www.youtube.com/watch?v=E2x6NG72tn4
+﻿
+﻿
 ﻿
 switch ([system.environment]::OSVersion.Version.Major) {
 
