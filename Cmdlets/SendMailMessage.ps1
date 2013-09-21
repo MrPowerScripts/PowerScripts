@@ -11,7 +11,9 @@ Send-MailMessage -To $to -From $MyEmail -Subject $Subject -Body $Body -SmtpServe
 
 <# 
 $PSEmailServer variable can be used to pre-configure the
-SMTP server in your Powershell Profile
+SMTP server in your Powershell Profile. Then you don't need
+to specify -smtpserver paramter. Send-MailMessage will use the
+SMTP sever address assigned to $PSEmailServer
 
 
 Delivery Notification Options:
