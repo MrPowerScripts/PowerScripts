@@ -6,7 +6,7 @@ $Files = Get-ChildItem "$env:USERPROFILE\desktop\temp" |
 Select-Object name,@{name="Size(MB)";expression={ "{0:N0}" -f ($_.Length / 1mb) }} |
 Sort-Object 'name'
 
-#Generate custome colored tables based on the last write time of the file
+#Generate custom colored tables based on the last write time of the file
 $Files | ForEach-Object {
  
                     
