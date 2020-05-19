@@ -3,6 +3,8 @@ PowerScripts
 
 Powershell Scripts
 
+Need Help? Join me on Discord https://bit.ly/mrps-discord and checkout out https://mrpowerscripts.com for more content!
+
 These scripts do not come with a warranty, or guarantee.
 
 They may, or may not work for you.
